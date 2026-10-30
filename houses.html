@@ -1,57 +1,154 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Лесной Берег — домики у озера: аренда на выходные и неделю</title>
-<meta name="description" content="Лесной Берег: 10 уютных домиков у озера, баня, мангальные зоны и тишина. Выберите даты в календаре и забронируйте отдых онлайн.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6b4a'/%3E%3Cpath d='M32 10 14 36h10L16 50h32L40 36h10z' fill='%23fff'/%3E%3C/svg%3E" type="image/svg+xml">
-<link rel="canonical" href="https://example.com/index.html">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="ru_RU">
-<meta property="og:site_name" content="Лесной Берег">
-<meta property="og:title" content="Лесной Берег — домики у озера">
-<meta property="og:description" content="10 уютных домиков у озера, баня и тишина. Забронируйте отдых онлайн.">
-<meta property="og:image" content="https://example.com/images/og-index.jpg">
-<meta property="og:url" content="https://example.com/index.html">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<a class="skip" href="#main">Перейти к содержимому</a>
-
-<!-- ===== ЕДИНАЯ ШАПКА (одинаковая на всех страницах; меняется только aria-current) ===== -->
-<header class="site-header">
- <div class="container">
-  <a class="logo" href="index.html" aria-label="Лесной Берег — на главную">🌲 Лесной Берег</a>
-  <nav aria-label="Основное меню">
-   <ul class="nav">
-    <li><a href="index.html" aria-current="page">Главная</a></li>
-    <li><a href="calendar.html">Календарь</a></li>
-    <li><a href="contacts.html">Контакты</a></li>
-    <li><a href="privacy.html">Конфиденциальность</a></li>
-   </ul>
-  </nav>
- </div>
-</header>
-
-
-
-<!-- ===== ЕДИНЫЙ ПОДВАЛ (одинаковый на всех страницах) ===== -->
-<footer class="site-footer">
- <div class="container">
-  <div>
-   <strong>Лесной Берег</strong><br>
-   Тел.: <a href="tel:+78000000000">8 800 000-00-00</a><br>
-   © 2026 Лесной Берег
-  </div>
-  <ul class="footer-links">
-   <li><a href="index.html">Главная</a></li>
-   <li><a href="calendar.html">Календарь</a></li>
-   <li><a href="contacts.html">Контакты</a></li>
-   <li><a href="privacy.html">Конфиденциальность</a></li>
-  </ul>
- </div>
-</footer>
-
-</body>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <title>
+      Домики — Сосновый берег
+    </title>
+    <meta content="Купол на двоих и А-фрейм до 4 гостей: оснащение и цены за ночь." name="description"/>
+    <meta content="Домики — Сосновый берег" property="og:title"/>
+    <meta content="Купол на двоих и А-фрейм до 4 гостей: оснащение и цены за ночь." property="og:description"/>
+    <meta content="img/og.jpg" property="og:image"/>
+    <meta content="website" property="og:type"/>
+    <link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 3 7 20h5l-4 8h16l-4-8h5z' fill='%232F6B4F'/%3E%3C/svg%3E" rel="icon"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Lora:wght@700&amp;display=swap" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX">
+    </script>
+    <script src="js/analytics.js">
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="w top">
+        <a class="logo" href="index.html">
+          СОСНОВЫЙ БЕРЕГ
+        </a>
+        <nav aria-label="Основное меню">
+          <a href="index.html">
+            Главная
+          </a>
+          <a aria-current="page" class="on" href="houses.html">
+            Домики
+          </a>
+          <a href="calendar.html">
+            Даты и цена
+          </a>
+          <a href="activities.html">
+            Отдых
+          </a>
+          <a href="location.html">
+            Как добраться
+          </a>
+          <a href="winter-guide.html">
+            Зимой в куполе
+          </a>
+          <a href="contacts.html">
+            Контакты
+          </a>
+        </nav>
+        <a class="btn alt" data-contact-type="phone" data-event="contact_click" href="tel:+79004242442">
+          +7 (900) 424-24-42
+        </a>
+      </div>
+    </header>
+    <main class="w">
+      <h1>
+        Домики
+      </h1>
+      <article class="card" data-event="house_view" data-house-type="dome" id="dome" style="margin:16px 0">
+        <h2>
+          Купол
+        </h2>
+        <img alt="Купол снаружи" height="520" id="m_dome" src="img/dome1.jpg" width="800"/>
+        <div class="gal">
+          <button data-alt="Купол снаружи" data-event="gallery_view" data-house-type="dome" data-photo-index="1" data-src="img/dome1.jpg" data-target="m_dome">
+            <img alt="Купол снаружи" src="img/dome1.jpg"/>
+          </button>
+          <button data-alt="Печь в куполе" data-event="gallery_view" data-house-type="dome" data-photo-index="2" data-src="img/dome2.jpg" data-target="m_dome">
+            <img alt="Печь в куполе" src="img/dome2.jpg"/>
+          </button>
+        </div>
+        <p>
+          2 гостя (не больше), панорамная стена, печь.
+        </p>
+        <p>
+          7 900 ₽ за ночь с воскресенья по четверг, 9 900 ₽ в пятницу и субботу.
+        </p>
+        <p>
+          <a class="btn" data-button-name="dome_dates" data-event="cta_click" data-page-section="houses" href="calendar.html">
+            Выбрать даты
+          </a>
+        </p>
+      </article>
+      <article class="card" data-event="house_view" data-house-type="aframe" id="aframe" style="margin:16px 0">
+        <h2>
+          «А-фрейм»
+        </h2>
+        <img alt="А-фрейм снаружи" height="520" id="m_aframe" src="img/aframe1.jpg" width="800"/>
+        <div class="gal">
+          <button data-alt="А-фрейм снаружи" data-event="gallery_view" data-house-type="aframe" data-photo-index="1" data-src="img/aframe1.jpg" data-target="m_aframe">
+            <img alt="А-фрейм снаружи" src="img/aframe1.jpg"/>
+          </button>
+          <button data-alt="Кухня в А-фрейме" data-event="gallery_view" data-house-type="aframe" data-photo-index="2" data-src="img/aframe2.jpg" data-target="m_aframe">
+            <img alt="Кухня в А-фрейме" src="img/aframe2.jpg"/>
+          </button>
+        </div>
+        <p>
+          До 4 гостей, кухня, второй ярус. Дополнительный гость сверх двух входит в цену. С животными — только здесь, плюс 1 500 ₽.
+        </p>
+        <p>
+          11 900 ₽ за ночь с воскресенья по четверг, 14 900 ₽ в пятницу и субботу.
+        </p>
+        <p>
+          <a class="btn" data-button-name="aframe_dates" data-event="cta_click" data-page-section="houses" href="calendar.html">
+            Выбрать даты
+          </a>
+        </p>
+      </article>
+      <section class="card" id="newyear">
+        <h2>
+          Новогодние ночи
+        </h2>
+        <p>
+          Ночи с 30 декабря по 2 января — цена ×1,5, минимум 2 ночи. В ноябре–феврале с воскресенья по четверг скидка 20 % (кроме новогодних ночей).
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="w">
+        <p>
+          ООО «Сосновый берег». 614 590, Новоозёрский район, д. Заозёрье, ул. Береговая, д. 1
+          <br/>
+          <a data-contact-type="phone" data-event="contact_click" href="tel:+79004242442">
+            +7 (900) 424-24-42
+          </a>
+          <a data-contact-type="email" data-event="contact_click" href="mailto:stay@sosnovy-bereg.example">
+            stay@sosnovy-bereg.example
+          </a>
+        </p>
+        <p>
+          <a data-event="social_click" data-network="instagram" data-page-section="footer" href="https://instagram.com/sosnovy_bereg_glamping" rel="noopener" target="_blank">
+            Instagram
+          </a>
+          <a data-event="social_click" data-network="vk" data-page-section="footer" href="#" rel="noopener" target="_blank">
+            ВКонтакте
+          </a>
+          <a data-event="social_click" data-network="telegram" data-page-section="footer" href="https://t.me/sosnovy_bereg" rel="noopener" target="_blank">
+            Telegram
+          </a>
+          <a data-event="social_click" data-network="youtube" data-page-section="footer" href="#" rel="noopener" target="_blank">
+            YouTube
+          </a>
+          <a href="privacy.html">
+            Политика конфиденциальности
+          </a>
+        </p>
+      </div>
+    </footer>
+    <script src="js/site.js">
+    </script>
+  </body>
 </html>
