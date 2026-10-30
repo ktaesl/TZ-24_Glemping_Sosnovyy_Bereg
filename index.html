@@ -138,31 +138,5 @@
  </div>
 </footer>
 
-<script>
-(function () {
-  var form = document.getElementById('request-form');
-  var msg = document.getElementById('form-msg');
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    msg.className = 'form-msg';
-    var name = form.name.value.trim();
-    var phone = form.phone.value.trim();
-    if (!name || !phone) {
-      msg.className = 'form-msg err';
-      msg.textContent = 'Заполните имя и телефон.';
-      return;
-    }
-    if (!form.consent.checked) {
-      msg.className = 'form-msg err';
-      msg.textContent = 'Без согласия на обработку персональных данных заявку отправить нельзя.';
-      form.consent.focus();
-      return;
-    }
-    // Здесь подключите реальную отправку (fetch на ваш обработчик).
-    msg.textContent = 'Спасибо! Заявка принята, мы свяжемся с вами.';
-    form.reset();
-  });
-})();
-</script>
 </body>
 </html>
